@@ -1,4 +1,5 @@
-const cards = document.querySelectorAll('.memory-card');
+//const cards = document.querySelectorAll('.memory-card');
+var cards = cards;
 let flippedCard = false;
 let board = false;
 let cardOne, cardTwo;
@@ -29,15 +30,6 @@ checkMatch = () => {
 //This access is available both in HTML and within the DOM. 
 // It is a map of DOMString, one entry for each custom data attribute.  
 
-
-/*
-   if (cardOne === cardTwo){
-   disableCards;
-   } else {
-   unflipCards
-   };
-   */
-
 disableCards = () => {
     // function disableCards() {
     cardOne.removeEventListener('click', flipCard); // removeEventListerner removes the clicking on the flipped card
@@ -61,11 +53,26 @@ resetBoard = () => { //reset the board when cards are flipped and no match
     [cardOne, cardTwo] = [null, null];
 };
 
+
+/*
 //(shuffle = () => {                                                     //forEach...for (i = 0; i < cards.length; i++)
-(function shuffle() {
+
+function shuffle() {
     cards.forEach(card => {
         let randomPlace = Math.floor(Math.random() * 12);
         card.style.order = randomPlace;
     });
-})();
+}
 cards.forEach(card => card.addEventListener('click', flipCard)); //add event click to flip the card
+(function game() {
+
+    shuffle();
+})();
+*/
+
+module.exports = flipCard;
+module.exports = checkMatch;
+module.exports = disableCards;
+module.exports = unflipCards;
+module.exports = resetBoard;
+//module.exports = shuffle;

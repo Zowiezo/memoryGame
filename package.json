@@ -1,0 +1,27 @@
+{
+  "name": "memoryg",
+  "version": "1.0.0",
+  "description": "",
+  "main": "scripts.js",
+  "scripts": {
+    "test": "jasmine"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zowiezo/memoryGame.git"
+  },
+  "author": "Zoleka",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Zowiezo/memoryGame/issues"
+  },
+  "homepage": "https://github.com/Zowiezo/memoryGame#readme",
+  "dependencies": {
+    "jasmine": "^3.4.0",
+    "jsdom": "^15.1.1"
+  },
+  "devDependencies": {},
+  "keywords": [
+    "jasmine"
+  ]
+}
